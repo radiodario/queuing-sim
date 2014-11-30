@@ -46,6 +46,10 @@ function tick() {
 
   timeSpan.innerHTML = moment(moment().diff(timeStarted)).format("HH:mm:ss");
 
+  if (position === 0) {
+    window.location.href = "http://www.alolo.co/blog";
+  }
+
 }
 
 function personLeavesQueue() {
