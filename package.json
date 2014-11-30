@@ -18,7 +18,8 @@
     "url": "git://github.com/radiodario/queuing-sim.git"
   },
   "dependencies": {
-
+    "moment": "^2.8.4",
+    "spin.js": "^2.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
