@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>queuing-sim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fader blur background"></div>
+<div class="container">
+  <img class="logo" src="img/manhead.png"/>
+  <p class="lead">We're really sorry that the huge demand for this artist means you're having to wait</p>
+  <p class="sublead">We really appreciate your patience and we'll have you on his site as soon as possible</p>
+  <div class="queue">
+    <div class="spin"></div>
+    <div class="line">
+      <canvas id="line" height="100" width="200"/>
+    </div>
+    <div class="position">You are in position <span id="positionNumber"></span> out of <span id="positionTotal"></span> people</div>
+    <div class="time">You have been waiting for <span id="timeLeft"></span></div>
+
+  </div>
+  <p class="leave"><a href="http://google.com">Leave the queue</a> (You will lose your place)</p>
+</div>
+
+<script id="live-reload" src="http://localhost:35729/livereload.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
