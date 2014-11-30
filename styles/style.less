@@ -81,13 +81,28 @@ body {
     font-weight: bold;
   }
 
+
+
   div.queue {
     width: 100%;
 
     .spin {
       width: 100%;
-      height: 50px;
+      height: 150px;
     }
+
+    .progress {
+      width: 100%;
+      height: 5px;
+      margin-bottom: 20px;
+      background-color: hsla(200, 100%, 50%, 0.2);
+      .bar {
+        height: 5px;
+        width: 0;
+        background-color: hsla(200, 100%, 50%, 1)
+      }
+    }
+
   }
 
   p.leave {
@@ -100,3 +115,6 @@ body {
   }
 
 }
+
+
+
