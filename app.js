@@ -3295,7 +3295,10 @@ var Spinner = require('spin.js');
 
 var positionNumberSpan = document.querySelector('span#positionNumber');
 var positionTotalSpan = document.querySelector('span#positionTotal');
+var percentSpan = document.querySelector('span#percent');
 var timeSpan = document.querySelector('span#timeLeft');
+
+var progressBar = document.querySelector('.progress .bar');
 
 var numberOfPeople = Math.random() * 100000 | 0;
 var position = numberOfPeople - Math.random() * 100 | 0;
@@ -3333,14 +3336,21 @@ function tick() {
   personArrivesToQueue();
   personIsProcessed();
 
+  var percent = 100 - ((position/numberOfPeople) * 100 | 0);
+
+  progressBar.style.width = percent + "%";
+
   positionTotalSpan.innerHTML = numberOfPeople;
   positionNumberSpan.innerHTML = position;
+  percentSpan.innerHTML = percent;
 
   timeSpan.innerHTML = moment(moment().diff(timeStarted)).format("HH:mm:ss");
 
   if (position === 0) {
     window.location.href = "http://www.alolo.co/blog";
   }
+
+
 
 }
 
