@@ -3297,7 +3297,7 @@ var positionNumberSpan = document.querySelector('span#positionNumber');
 var positionTotalSpan = document.querySelector('span#positionTotal');
 var timeSpan = document.querySelector('span#timeLeft');
 
-var numberOfPeople = Math.random() * 1000 | 0;
+var numberOfPeople = Math.random() * 100000 | 0;
 var position = numberOfPeople - Math.random() * 100 | 0;
 var accessDate = new Date(new Date().getTime() + 25 * 60 * 1000);
 
